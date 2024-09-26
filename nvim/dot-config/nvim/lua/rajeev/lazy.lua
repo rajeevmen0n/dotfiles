@@ -14,7 +14,9 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup(
-    {},
+    {
+        { import = "rajeev.plugins" },
+    },
     {
         checker = {
             enabled = true,
@@ -25,4 +27,3 @@ require("lazy").setup(
         }
     }
 )
-
