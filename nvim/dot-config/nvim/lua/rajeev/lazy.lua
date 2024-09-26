@@ -16,6 +16,7 @@ vim.opt.rtp:prepend(lazypath)
 require("lazy").setup(
     {
         { import = "rajeev.plugins" },
+        { import = "rajeev.plugins.lsp"},
     },
     {
         checker = {
