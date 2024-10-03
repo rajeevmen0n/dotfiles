@@ -1,4 +1,7 @@
+vim.g.moonflyTransparent = true
+
 return {
+
     "bluz71/vim-moonfly-colors",
     priority = 1000,
     config = function()
