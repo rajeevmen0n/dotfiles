@@ -24,18 +24,13 @@ return {
         mason_lspconfig.setup({
             -- list of servers for mason to install
             ensure_installed = {
-                "asm_lsp",
                 "bashls",
                 "clangd",
                 "cmake",
-                "tailwindcss",
                 "dockerls",
                 "gopls",
-                "html",
                 "jsonls",
-                "ltex",
                 "lua_ls",
-                "perlnavigator",
                 "pyright",
                 "lemminx",
                 "yamlls",
