@@ -14,40 +14,14 @@ config.window_background_opacity = 0.8
 config.macos_window_background_blur = 50
 
 --colorscheme
-config.colors = {
-    background = "#080808",
-    foreground = "#bdbdbd",
-    cursor_bg = "#9e9e9e",
-    cursor_fg = "#080808",
-    cursor_border = "#9e9e9e",
-    selection_bg = "#b2ceee",
-    selection_fg = "#080808",
-    scrollbar_thumb = "#9e9e9e",
-    split = "#9e9e9e",
-
-    ansi = {
-      "#323437",
-      "#ff5454",
-      "#8cc85f",
-      "#e3c78a",
-      "#80a0ff",
-      "#cf87e8",
-      "#79dac8",
-      "#c6c6c6",
-    },
-    brights = {
-      "#949494",
-      "#ff5189",
-      "#36c692",
-      "#c6c684",
-      "#74b2ff",
-      "#ae81ff",
-      "#85dc85",
-      "#e4e4e4",
-    },
-
-    compose_cursor = "#e3c78a",
-    visual_bell = "#e3c78a"
+local custom = wezterm.color.get_builtin_schemes()["Catppuccin Mocha"]
+custom.background = "#000000"
+custom.tab_bar.background = "#040404"
+custom.tab_bar.inactive_tab.bg_color = "#0f0f0f"
+custom.tab_bar.new_tab.bg_color = "#080808"
+config.color_schemes = {
+    ["OLEDppuccin"] = custom,
 }
+config.color_scheme = "OLEDppuccin"
 
 return config
