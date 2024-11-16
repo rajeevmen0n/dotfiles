@@ -1,5 +1,5 @@
 source_if_exists() {
-    [[ -e $1 ]] && source $1 || echo $1
+    [[ -e $1 ]] && source $1
 }
 
 # Shell configs
