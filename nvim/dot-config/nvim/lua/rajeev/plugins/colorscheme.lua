@@ -1,10 +1,10 @@
-vim.g.moonflyTransparent = true
-
 return {
-
-    "bluz71/vim-moonfly-colors",
+    "catppuccin/nvim",
     priority = 1000,
     config = function()
-        vim.cmd("colorscheme moonfly")
+        require("catppuccin").setup({
+            transparent_background = true
+        })
+        vim.cmd("colorscheme catppuccin")
     end
 }
