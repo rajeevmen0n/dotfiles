@@ -1,0 +1,12 @@
+source_if_exists() {
+    [[ -e $1 ]] && source $1
+}
+
+# Shell configs
+eval "$(starship init zsh)"
+source_if_exists ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+source_if_exists ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source_if_exists ~/.zsh/custom.zsh
+
+# Aliases
+alias ll='ls -lha'
