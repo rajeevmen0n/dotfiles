@@ -24,5 +24,3 @@ keymap.set("n", "<leader>qq", "<cmd>q<CR>", {desc = "Quit the current window"})
 keymap.set("n", "<leader>qi", "<cmd>qa<CR>", {desc = "Exit vim, unless there are some buffers which have been changed"})
 keymap.set("n", "<leader>qa", "<cmd>qa!<CR>", {desc = "Exit vim, all changes are lost"})
 
-keymap.set("n", "<leader>bp", "<cmd>bp<CR>", {desc = "Previous buffer"})
-keymap.set("n", "<leader>bn", "<cmd>bn<CR>", {desc = "Next buffer"})

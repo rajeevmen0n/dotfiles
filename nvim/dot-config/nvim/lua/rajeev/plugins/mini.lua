@@ -5,7 +5,7 @@ return {
 
         -- mini.bufremove
         local bufremove = require('mini.bufremove')
-        vim.keymap.set('n', '<leader>bd', bufremove.delete, { desc = 'Delete buffer' })
+        vim.keymap.set('n', '<leader>bx', bufremove.delete, { desc = 'Close buffer' })
 
         -- mini.files
         local files = require('mini.files')
@@ -46,6 +46,7 @@ return {
         require('mini.statusline').setup()
         require('mini.surround').setup()
         require('mini.tabline').setup()
+        require('mini.bracketed').setup()
 
     end
 }
