@@ -13,6 +13,7 @@ config.window_decorations = "RESIZE"
 
 config.window_background_opacity = 0.8
 config.macos_window_background_blur = 50
+config.max_fps = 120
 
 --colorscheme
 local custom = wezterm.color.get_builtin_schemes()["Catppuccin Mocha"]
