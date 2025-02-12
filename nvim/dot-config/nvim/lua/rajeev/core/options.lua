@@ -37,17 +37,19 @@ local function paste()
     }
 end
 
-vim.g.clipboard = {
-    name = 'OSC 52',
-    copy = {
-        ['+'] = require('vim.ui.clipboard.osc52').copy('+'),
-        ['*'] = require('vim.ui.clipboard.osc52').copy('*'),
-    },
-    paste = {
-        ['+'] = paste, -- require('vim.ui.clipboard.osc52').paste('+'),
-        ['*'] = paste, -- require('vim.ui.clipboard.osc52').paste('*'),
-    },
-}
+if vim.env.TMUX == nil then
+    vim.g.clipboard = {
+        name = 'OSC 52',
+        copy = {
+            ['+'] = require('vim.ui.clipboard.osc52').copy('+'),
+            ['*'] = require('vim.ui.clipboard.osc52').copy('*'),
+        },
+        paste = {
+            ['+'] = paste, -- require('vim.ui.clipboard.osc52').paste('+'),
+            ['*'] = paste, -- require('vim.ui.clipboard.osc52').paste('*'),
+        },
+    }
+end
 
 -- split windows
 opt.splitright = true -- split vertical window to the right
