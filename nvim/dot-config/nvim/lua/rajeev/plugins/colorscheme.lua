@@ -3,7 +3,12 @@ return {
     priority = 1000,
     config = function()
         require("catppuccin").setup({
-            transparent_background = true
+            flavour = "mocha",
+            transparent_background = true,
+            float = {
+                solid = false,
+                transparent = true
+            }
         })
         vim.cmd("colorscheme catppuccin")
     end
