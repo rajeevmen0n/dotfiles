@@ -7,6 +7,12 @@ return {
             auto_save = true,
             auto_restore = true,
             suppressed_dirs = {"~/", "~/Downloads", "~/Documents", "~/Desktop/", "~/tmp", "/tmp"},
+            post_restore_cmds = {
+                function()
+                    -- Re-attach treesitter to current buffer after session restore
+                    vim.cmd('silent! edit')
+                end
+            },
         })
 
         local keymap = vim.keymap
