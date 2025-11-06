@@ -59,7 +59,6 @@ return {
             vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = "" })
         end
 
-        local lspconfig = require("lspconfig")
         local mason_lspconfig = require("mason-lspconfig")
         local cmp_nvim_lsp = require("cmp_nvim_lsp")
         local capabilities = cmp_nvim_lsp.default_capabilities()
@@ -68,7 +67,7 @@ return {
             handlers = {
                 -- default handler for installed servers
                 function(server_name)
-                    lspconfig[server_name].setup({
+                    vim.lsp.config( server_name, {
                         capabilities = capabilities,
                     })
                 end,
