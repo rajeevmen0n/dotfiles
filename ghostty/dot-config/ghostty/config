@@ -19,3 +19,5 @@ background-blur-radius = 20
 
 # Shader
 custom-shader = bloom.glsl
+custom-shader = cursor_blaze_no_trail.glsl
+custom-shader = cursor_smear.glsl
