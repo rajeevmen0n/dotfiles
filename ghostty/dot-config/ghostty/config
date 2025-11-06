@@ -8,7 +8,7 @@ mouse-hide-while-typing = true
 
 # Cursor settings
 cursor-style = bar
-shell-integration-features = no-cursor
+cursor-style-blink = true
 
 # Font
 font-family = "MesloLGS Nerd Font Mono"

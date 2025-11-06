@@ -17,7 +17,13 @@ opt.wrap = false
 opt.ignorecase = true -- ignore case when searching
 opt.smartcase = true -- assume case-sensitive when mixed case search
 
+-- cursor settings
 opt.cursorline = true
+vim.api.nvim_create_autocmd("VimLeave", {
+    group = vim.api.nvim_create_augroup("Shape", { clear = true }),
+    pattern = "*",
+    command = "set guicursor=a:ver90-blinkwait700-blinkon400-blinkoff250",
+})
 
 -- terminal color setup
 opt.termguicolors = true
