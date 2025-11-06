@@ -6,6 +6,10 @@ window-padding-x = 9
 window-padding-y = 9
 mouse-hide-while-typing = true
 
+# Cursor settings
+cursor-style = bar
+shell-integration-features = no-cursor
+
 # Font
 font-family = "MesloLGS Nerd Font Mono"
 font-size = 12 
