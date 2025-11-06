@@ -5,7 +5,6 @@ term = "xterm-256color"
 window-padding-x = 9
 window-padding-y = 9
 mouse-hide-while-typing = true
-macos-titlebar-style = "hidden"
 
 # Font
 font-family = "MesloLGS Nerd Font Mono"
