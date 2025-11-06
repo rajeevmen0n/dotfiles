@@ -32,6 +32,7 @@ local apps <const> = {
   ["kitty"] = ":kitty:",
   ["Mail"] = ":mail:",
   ["Maps"] = ":maps:",
+  ["Ghostty"] = ":ghostty:",
   ["Google Maps"] = ":maps:",
   ["Google Chat"] = ":android_messages:",
   ["Google Meet"] = ":camera:",
